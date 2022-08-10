@@ -55,7 +55,7 @@ print(txt.encode(encoding="ascii",errors="xmlcharrefreplace"))
 txt = "Hello, welcome to my world."
 
 a = txt.endswith('.')
-print(a)
+print("endswitch",a)
 
 # string.endswith(value, start, end)
 a = txt.endswith('my world.')
@@ -78,3 +78,45 @@ print(txt.expandtabs(10))
 txt = "Hello, welcome to my world."
 a = txt.find('welcome')
 print(a)
+
+# string.find(value, start, end)
+print(txt.find('e', 5, 10)) # 위에서 했던 endswitch와 같이 위치를 지정해서 특정구간에서만 지정한 문자를 찾을 수 있다.
+
+print(txt.find('q')) # -1로 결과값이 나온다.
+# txt.index('q') # index의 경우 없는 문자의 경우 에러로 처리하지만 find의 경우는 -1로 나타냄으로써 에러로 처리하지 않는다.
+
+# format()의 사용법
+
+txt = "For only {price:.2f} dollars!"
+print(txt.format(price = 49))
+
+# string.format(value1, value2...)
+
+# example
+
+txt1= "My name is {frame}, I'm {age}".format(frame = 'Jason', age = 28)
+txt2= "My name is {0}, I'm {1}".format('Jason',28)
+txt3 = "My name is {}, I'm {}".format('Jason', 28)
+
+print(txt1)
+print(txt2)
+print(txt3)
+
+# 다양한 기호를 이용한 format()메서드 이용
+
+txt = "We have {:<8} chickens." # 이렇게 사용하면 오른쪽에 공백을 넣은 숫자 만큼 넣어줍니다.
+print(txt.format(49))
+
+txt = "We have {:>8} chickens." # 이렇게 사용하면 왼쪽에 공백을 넣은 숫자 만큼 넣어줍니다.
+print(txt.format(49))
+
+txt = "We have {:^8} chickens." # 이번에는 공백의 중간에 글자를 넣어줍니다.
+print(txt.format(49))
+
+'''
+glossary - iterable 용어는 이렇게 번역하는 편이 좋을 것 같습니다.
+
+iterable: 자신의 멤버를 한 번에 리턴할 수 있는 객체입니다. list, str, tuple, dict 등이 여기에 속합니다.
+'''
+
+
