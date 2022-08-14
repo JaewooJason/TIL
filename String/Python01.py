@@ -119,4 +119,23 @@ glossary - iterable 용어는 이렇게 번역하는 편이 좋을 것 같습니
 iterable: 자신의 멤버를 한 번에 리턴할 수 있는 객체입니다. list, str, tuple, dict 등이 여기에 속합니다.
 '''
 
+# isalnum() 의 사용법
+txt = "Company12"
+print(txt.isalnum())
+''' isalnum()은 문자열 안에 a-z and 0-9의 숫자가 들어 있을 경우 True로 리턴되는 메서드이다. 만약 스페이스는 특수기호가 
+포함되어 있을 시 False로 리턴된다.'''
+
+
+# isalpha()의 사용법
+
+txt = "CompanyX"
+print(txt.isalpha())
+''' isalpha()의 경우는 a-z만 있을때 True로 리턴되는 메서드이다. 숫자가 포함되어 있어도 False로 리턴된다.'''
+
+# isascii()의 사용법
+txt = "Company123"
+print(txt.isascii())
+''' 파이썬에 내장되어 있는 아스키코드가 있다면 True로 리턴해주는 메서드이다.'''
+
+
 
