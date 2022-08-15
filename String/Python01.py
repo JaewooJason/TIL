@@ -137,5 +137,21 @@ txt = "Company123"
 print(txt.isascii())
 ''' 파이썬에 내장되어 있는 아스키코드가 있다면 True로 리턴해주는 메서드이다.'''
 
+# isdecimal() 의 사용법
+txt = "\u0033" #unicode for 3
+print(txt.isdecimal()) # 문자열안에 유니코드를 체크하는것이다. 하지만 문자가 아닌 숫자만 True로 리턴한다.
+
+# isdisit() 의 사용법
+txt = "50800"
+print(txt.isdigit()) # 문자열 안에 숫자가 포함이 되어 있으면 True를 리턴해주는 메서드이다. SW 에서 기본 파이썬으로 나옴
+# isdigit()의 경우 제곱도 True로 리턴해준다.
+
+# isidentifier()의 사용법
+txt= 'Demo'
+print(txt.isidentifier()) # isidentifierd()의 경우 언어(a-z), 숫자(0-9) 그리고 (_) 이렇게가 포함이 되어 있으면 True로 리턴
+
+# 하지만 변수를 지정할때 처럼 시작이 숫자이거나 띄워쓰기가 포함되면 False 이다.
+
+
 
 
