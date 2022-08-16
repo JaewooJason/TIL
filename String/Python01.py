@@ -151,6 +151,16 @@ txt= 'Demo'
 print(txt.isidentifier()) # isidentifierd()의 경우 언어(a-z), 숫자(0-9) 그리고 (_) 이렇게가 포함이 되어 있으면 True로 리턴
 
 # 하지만 변수를 지정할때 처럼 시작이 숫자이거나 띄워쓰기가 포함되면 False 이다.
+a = "MyFolder"
+b = "Demo002"
+c = "2bring"
+d = "my demo"
+
+print(a.isidentifier())
+print(b.isidentifier())
+print('*'*50)
+print(c.isidentifier())
+print(d.isidentifier())
 
 
 
