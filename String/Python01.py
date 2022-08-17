@@ -162,6 +162,10 @@ print('*'*50)
 print(c.isidentifier())
 print(d.isidentifier())
 
+# islower() 의 사용법
+
+txt = "hello world!"
+print(txt.islower())
 
 
 
