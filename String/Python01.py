@@ -167,5 +167,30 @@ print(d.isidentifier())
 txt = "hello world!"
 print(txt.islower())
 
+a = "Hello world!"
+b = "hello 123"
+c = "mynameisPeter"
 
+print(a.islower())
+print(b.islower())
+print(c.islower())
+
+
+
+# isnumeric()
+
+txt = "565543"
+print(txt.isnumeric())
+
+a = "\u0030" #unicode for 0
+b = "\u00B2" #unicode for &sup2;
+c = "10km2"
+d = "-1"
+e = "1.5"
+
+print(a.isnumeric())
+print(b.isnumeric())
+print(c.isnumeric())
+print(d.isnumeric())
+print(e.isnumeric())
 
