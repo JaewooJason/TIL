@@ -145,6 +145,10 @@ print(txt.isdecimal()) # 문자열안에 유니코드를 체크하는것이다. 
 txt = "50800"
 print(txt.isdigit()) # 문자열 안에 숫자가 포함이 되어 있으면 True를 리턴해주는 메서드이다. SW 에서 기본 파이썬으로 나옴
 # isdigit()의 경우 제곱도 True로 리턴해준다.
+print('*'*10)
+txt = '0.225'
+print(txt.isdigit())#숫자가 아닌 .이나 -의 경우에는 숫자가 아니기 때문에 False 리턴이 된다.
+
 
 # isidentifier()의 사용법
 txt= 'Demo'
@@ -177,20 +181,40 @@ print(c.islower())
 
 
 
-# isnumeric()
+# isnumeric() 의 사용법
 
 txt = "565543"
-print(txt.isnumeric())
+print(txt.isnumeric()) # 글자안에 정수가 포함이 되어 있으면 True 리턴이 된다.
 
-a = "\u0030" #unicode for 0
+a = "\u0030" #unicode for 0 유니코드도 가능하다
 b = "\u00B2" #unicode for &sup2;
 c = "10km2"
-d = "-1"
-e = "1.5"
+d = "-1" # 음수의 경우 되지 않는다
+e = "1.5" # float 의 경우에도 False 로 리턴이 된다. isdigit()의 경우에도 같은 상황이다. .이나 -의 포함은 숫자가 아니기 때문에 False 이다.
 
 print(a.isnumeric())
 print(b.isnumeric())
 print(c.isnumeric())
 print(d.isnumeric())
 print(e.isnumeric())
+
+# isprintable()의 사용법
+
+txt = "Hello! Are you #1?"
+print(txt.isprintable()) # 프린트가 가능한 모든 문자가 포함이 되어 있으면 True 로 리턴
+
+txt = "Hello!\nAre you #1?"
+print(txt)
+print(txt.isprintable()) # txt안에 단순히 문자만 포함이 되어 있는것이 아닌 줄 바꿈의 하는 /n이 포함이 되어 있어 False 이다.
+
+# isspace()의 사용법
+
+txt= '       '
+print(txt.isspace()) #스페이스만 포함되어 경우에만 True로 리턴이 되는 메서드이다.
+
+txt = '      s       '
+print(txt.isspace()) # 이렇게 하나만 문자가 포함이 되어 있으면 False로 리턴이 된다.
+
+
+
 
