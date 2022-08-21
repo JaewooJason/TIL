@@ -216,5 +216,18 @@ txt = '      s       '
 print(txt.isspace()) # 이렇게 하나만 문자가 포함이 되어 있으면 False로 리턴이 된다.
 
 
+# istitle()의 사용법
 
+txt = "Hello, And Welcome To My World!"
+print(txt.istitle())
+# 변수안에 있는 첫번째 문자가 대문자이고 소문자와 대문자가 섞여있으면 True리턴이 되는 메서드이다.
 
+a = "HELLO, AND WELCOME TO MY WORLD"
+b = "Hello"
+c = "22 Names"
+d = "This Is %'!?"
+
+print(a.istitle())
+print(b.istitle())
+print(c.istitle())
+print(b.istitle())
