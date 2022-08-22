@@ -231,3 +231,31 @@ print(a.istitle())
 print(b.istitle())
 print(c.istitle())
 print(b.istitle())
+# isupper() 의 사용법
+
+txt = "THIS IS NOW!"
+print(txt.isupper()) # 이렇게 모든 문자가 대문자 일때 True로 리턴이 된다.
+
+a = "Hello World!"
+b = "hello 123"
+c = "MY NAME IS PETER"
+
+print(a.isupper())
+print(b.isupper())
+print(c.isupper())
+
+myTuple = ("John", "Peter", "Vicky")
+x = '#'.join(myTuple) # 이렇게 튜플안에 들어 있는 단어들을 '' 안에 설정한 문자 대로 나누게 한다.
+print(x)
+myList = ['John', 'Jason', 'Kiki'] # 리스트도 가능하고 딕셔너리도 가능하다.
+y = ' # '.join(myList)
+print(y)
+
+myDict = {"name": "John", "country": "Norway"} # 대신 딕셔너리는 키값 사이에 들어가게 된다.
+mySeparator = "TEST"
+x = mySeparator.join(myDict)
+print(x)
+
+
+
+
