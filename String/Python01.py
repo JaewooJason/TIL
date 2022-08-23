@@ -256,6 +256,32 @@ mySeparator = "TEST"
 x = mySeparator.join(myDict)
 print(x)
 
+# ljust()의 사용법
+
+txt = 'banana'
+x = txt.ljust(20) # ()안에 넣은 만큼에 공간이 생긴다.
+print(x,'is very very delicious')
+
+y = txt.ljust(20,'O') # 이런식으로 ()안에 앞은 숫자, 뒤를 넣고 싶은 문자를 넣으면 넣은 문자의 갯수만 리턴된다.
+print(y)
+
+txt = "Hello my FRIENDS"
+a = txt.lower() # 문자열 안에 있는 문자를 전부 소문자로 바꾸는 메서드이다.
+print(a)
+
+# lstrip()의 사용
+
+txt = "     banana     "
+x = txt.lstrip() # 좌측에 공백을 사라지게 하는 메서드이다. space 는 디폴트로 설정되어 있는 전부 삭제 하는 의미
+print('color of',x, 'is Yellow')
+
+txt = ",,,,,ssaaww.....banana"
+x = txt.lstrip('.,asw') # 이런식으로 스트립을 사용하면 ()안에 있는 문자를 삭제를 할 수 있다.
+'''하지만 ()안에 있는 문자이외에 다른 문자가 문자열안에 있으면 전부 삭제되지 않고 새로운 문자를 만나는 곳에서 
+strip이 멈추게 된다.'''
+print(x)
+
+
 
 
 
