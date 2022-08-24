@@ -281,6 +281,30 @@ x = txt.lstrip('.,asw') # 이런식으로 스트립을 사용하면 ()안에 있
 strip이 멈추게 된다.'''
 print(x)
 
+# maketrans()의 사용법
+
+txt = "Hello Sam!"
+table = txt.maketrans('S','P')# 이런식으로 변경하는 메서드
+print(txt.translate(table))
+
+txt = "Hi Sam!"
+x = "mSa"
+y = "eJo"
+mytable = txt.maketrans(x, y)
+print(txt.translate(mytable))
+
+txt = "Good night Sam!"
+x = "mSa"
+y = "eJo"
+z = "odnght"
+mytable = txt.maketrans(x, y, z)
+print(txt.translate(mytable))
+
+txt = "Good night Sam!"
+x = "mSa"
+y = "eJo"
+z = "odnght"
+print(txt.maketrans(x, y, z))
 
 
 
