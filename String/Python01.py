@@ -306,6 +306,16 @@ y = "eJo"
 z = "odnght"
 print(txt.maketrans(x, y, z))
 
+# partition()의 사용법
+txt = "I could eat bananas all day"
+a = txt.partition('bananas')
+print(a)
+# 튜플을 3개로 나누는 메소드 이다. ()안에 있는 문자를 기준으로 0,1,2나뉜다
+txt = "I could eat bananas all day"
+a = txt.partition('apples')
+print(a)
+# 이렇게 없는 단어가 있으면 첫번째에 0으로 맵핑으로 튜플을 만들고 나머지는 '' '' 으로 나타내기 된다.
+
 
 
 
