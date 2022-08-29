@@ -316,6 +316,20 @@ a = txt.partition('apples')
 print(a)
 # 이렇게 없는 단어가 있으면 첫번째에 0으로 맵핑으로 튜플을 만들고 나머지는 '' '' 으로 나타내기 된다.
 
+# replace()의 사용법
+
+txt = 'I like apples'
+a = txt.replace('apples', 'bananas') # 간단하게 배웠던거 처럼 apples가 bananas로 바뀐다.
+print(a)
+
+txt = "one one was a race horse, two two was one too."
+x = txt.replace('one','three')
+print(x)
+
+txt = "one one was a race horse, two two was one too."
+y = txt.replace('one', 'three',2) # 이런식으로 마지막에 2를 넣게 되면 두번만 replace되고 나머지는 원래모습 그대로 이다.
+
+print(y)
 
 
 
