@@ -331,5 +331,18 @@ y = txt.replace('one', 'three',2) # 이런식으로 마지막에 2를 넣게 되
 
 print(y)
 
+# rfind()의 메서드
+
+txt = "Mi casa, su casa."
+a= txt.rfind('casa') # rfind()는 마지막에서 부터 원하는 단어를 찾는거라고 생각하면 된다. 사용하는 방법은 find()와 같음
+print(a)
+
+# rindex()의 메서드
+
+txt = "Mi casa, su casa."
+a = txt.rindex('casa') # rindex()는 마지막에서 부터 원하는 단어를 찾는다. 
+print(a)
+
+
 
 
