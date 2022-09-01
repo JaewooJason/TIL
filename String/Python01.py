@@ -343,6 +343,42 @@ txt = "Mi casa, su casa."
 a = txt.rindex('casa') # rindex()는 마지막에서 부터 원하는 단어를 찾는다. 
 print(a)
 
+#rjust()의 메서드
+
+txt = "banana"
+a = txt.rjust(20) # 이런식으로 앞에서 부터 20칸 띄우고 시작하게 된다.
+print(a,'is best of fruit in the world.')
+
+txt = 'apple'
+a = txt.rjust(20,'O') # 숫자 뒤에다가 이렇게 넣고 싶은 문자를 넣을 수 도 있다.
+print(a,'is best of fruit in the world.')
+
+
+# rpartition()의 사용법
+
+txt = "I could eat bananas all day, bananas are my favorite fruit"
+a = txt.rpartition('bananas')
+print(a)
+
+# 만약에 없는 문자를 넣게되면 튜플안에 첫번째에 다 담기게 된다. 이것은 partition()이랑 같다.
+
+# rsplit()의 사용법
+txt = "apple, banana, cherry"
+a = txt.rsplit(', ') # 이렇게 문자열 안에 있는것을 리스트형식으로 바꾸어 준다.
+print(a)
+
+b = txt.rsplit(', ',1) # 이렇게 maxsplit을 지정하면 지정한 숫자로 스플릿하게 된다.
+print(b)
+
+#rstrip()의 사용법
+
+txt = "     banana     "
+a = txt.rstrip() # 오른쪽 공백을 삭제해버린다.
+print("of all fruits", a, "is my favorite")
+
+txt = "banana,,,,,ssqqqww....."
+x = txt.rstrip(',.qsw') # 괄호안에 있는 특정문자를 없애준다.
+print(x)
 
 
 
