@@ -380,5 +380,34 @@ txt = "banana,,,,,ssqqqww....."
 x = txt.rstrip(',.qsw') # 괄호안에 있는 특정문자를 없애준다.
 print(x)
 
+# split()의 사용법
+
+txt = "welcome to the jungle"
+x = txt.split() # 변수안에 저장된 문자열을 쪼개어 리스트로 담는다.
+print(x)
+
+txt = "hello, my name is Peter, I am 26 years old"
+y= txt.split(', ') # 괄호안에 있는 문자를 기준으로 쪼개어 리스트 형식으로 담는다.
+print(y)
+
+txt = "apple#banana#cherry#orange"
+z = txt.split('#')
+print(z)
+
+txt = "apple#banana#cherry#orange"
+w = txt.split('#',1)
+print(w) # maxsplit을 정함으로서 전부다 스플릿하지 않고 괄호안에 숫자 만큼 쪼갠다.
+
+txt = "Thank you for the music\nWelcome to the jungle"
+x = txt.splitlines() # 라인을 기준으로 스플릿한다.
+print(x)
+txt = "Thank you for the music\nWelcome to the jungle"
+y= txt.splitlines(True) # 만약에 라인 브레이커 까지 포함해서 나타내고 싶으면 ()안에 True를 넣으면 된다. default는 false 이다.
+print(y)
+
+
+
+
+
 
 
