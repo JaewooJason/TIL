@@ -398,6 +398,8 @@ txt = "apple#banana#cherry#orange"
 w = txt.split('#',1)
 print(w) # maxsplit을 정함으로서 전부다 스플릿하지 않고 괄호안에 숫자 만큼 쪼갠다.
 
+# splitlines()의 사용법
+
 txt = "Thank you for the music\nWelcome to the jungle"
 x = txt.splitlines() # 라인을 기준으로 스플릿한다.
 print(x)
@@ -405,9 +407,45 @@ txt = "Thank you for the music\nWelcome to the jungle"
 y= txt.splitlines(True) # 만약에 라인 브레이커 까지 포함해서 나타내고 싶으면 ()안에 True를 넣으면 된다. default는 false 이다.
 print(y)
 
+# startswith()의 사용법
+txt = "Hello, welcome to my world."
+x = txt.startswith('Hello')
+print(x)
 
+y = txt.startswith('wel', 7,20) # 이런식으로 위치를 정해서 사용할 수 있는 옵션이 있다.
+print(y)
 
+# strip()의 사용법
 
+txt = "     banana     "
+x = txt.strip() # strip을 사용하면 양쪽의 공백을 모두 없애버린다.
+print(("of all fruits", x, "is my favorite"))
 
+txt = ",,,,,rrttgg.....banana....rrr"
+y = txt.strip('.,rtg') # 옵션으로 필요없는 문자들을 삭세도 가능하다.
+print(y)
 
+# swapcase()의 사용법
+txt = "Hello My Name Is PETER"
+x= txt.swapcase() # 대문자는 소문자로 소문자는 대문자로 바꾸어 주는 메서드이다.
+print(x)
 
+# title()의 사용법
+
+txt = "Welcome to my world"
+x = txt.title() # 문장의 단어의 시작하는 첫번째 레터를 대문자로 변경해준다.
+print(x)
+
+txt = "Welcome to my 2nd world"
+y= txt.title() # 무조건 문자열만 바꾸어 줌으로서 2nd의 경우 숫자 뒤에 있는 문자를 대문자로 바꾸었다.
+print(y)
+
+txt = "hello b2b2b2 and 3g3g3g"
+z = txt.title() # 이 경우에는 첫번째 레터 뒤에 숫자나 특수기호가 들어오게 되면 그 다음에 오는 문자도 대문자로 변경한다.
+print(z)
+
+# translate()의 사용법
+myDict = {83: 80}
+txt = 'Hello Sam!!'
+
+print(txt.translate(myDict))
