@@ -449,3 +449,13 @@ myDict = {83: 80}
 txt = 'Hello Sam!!'
 
 print(txt.translate(myDict))
+
+# upper()의 사용법
+txt = "Hello my friends"
+x = txt.upper() # lower()의 반대 개념이라고 생각하면 된다. upper()을 사용하게 되면 문자 모두가 대문자로 변경된다.
+print(x)
+
+# zfill()의 사용법
+txt ='50'
+y = txt.zfill(10) # '50'이  포함되게 하여서 ()안의 숫자의 만큼의 자리수를 만들어 낸다. 변수에 지정되어진 숫자를 제외하고는 전부 0으로 리턴이다. 
+print(y)
