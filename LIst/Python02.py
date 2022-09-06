@@ -19,3 +19,43 @@ fruits = ['apple', 'orange', 'banana', 'kiwi']
 a = fruits.copy() # 이렇게 copy를 사용하는것은 원본에 영향을 주지 않고 카피하여 사용하기 위해서 이다.
 print(a)
 
+# count()의 사용법
+
+fruits = ['apple', 'orange', 'banana', 'kiwi']
+x = fruits.count('apple')
+print(x)
+
+point= [1,2,3,3,4,5,4,5,6,6,6,9]
+y = point.count(6)
+print(y)
+
+# extend()의 사용법
+
+fruits = ['apple', 'orange', 'banana']
+car = ['Volvo', 'Hyundai', 'Kia']
+print(car)
+fruits.extend(car)
+print(fruits)
+
+fruit = ['apple','kiwi', 'mandarin']
+points = (1,2,3,4)
+
+fruit.extend(points)
+print(fruit) # list 와 tuple 을 합칠 수 있다.
+
+# index()의 사용법
+fruits = ['apple','banana','orange']
+x = fruits.index('banana')
+print(x)
+
+fruits = [4, 55, 64, 32, 16, 32]
+fruits.index(32) # 첫번째 만나는 수를 리턴해준다.
+
+# insert()의 사용법
+fruits = ['apple', 'banana', 'cherry']
+fruits.insert(1,'orange') # 원하는곳에 집어 넣어준다.
+print(fruits)
+
+
+
+
