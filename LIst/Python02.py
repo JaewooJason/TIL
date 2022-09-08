@@ -56,6 +56,63 @@ fruits = ['apple', 'banana', 'cherry']
 fruits.insert(1,'orange') # 원하는곳에 집어 넣어준다.
 print(fruits)
 
+# pop()의 사용법
+fruits = ['apple', 'banana','cherry']
+fruits.pop(1) # pop의 경우 ()의 저장된 숫자 자리를 사라지게 하는 메서드이다.
+print(fruits)
+
+fruits =['banana', 'cherry', 'orange']
+x = fruits.pop(2) # 변수에 담아서 프린트하게 되면 그 자리에서 pop으로 사라진 친구가 보이게 된다.
+print(x)
+
+# remove()의 사용법
+fruits = ['apple', 'banana', 'cherry']
+fruits.remove('banana') # pop의 경우 포지션을 적었다면, remove의 경우 직접적인 리스트 안에 있는것을 적어서 삭제하는것이다.
+print(fruits)
+
+# reverse()의 사용법
+fruits = ['apple', 'banana', 'cherry']
+fruits.reverse() # 변수에 담아서 사용하지 말고 메서드를 적용시키고 알아서 적용이 된다. 그 후 print()로 확인하면 리스트 안에 원소가 반대로 되어 있다.
+print(fruits)
+
+# sort()의 사용법
+
+cars = ['Ford', 'BMW', 'Volvo']
+cars.sort() # ABCD 순서대로 자동으로 정렬해준다.
+print(cars)
+
+cars = ['Ford', 'BMW', 'Volvo', 'Benz']
+cars.sort(reverse=True) # 이렇게 하면 reverse = True로 하게되면 반대로 정렬하여 나오게 된다.
+print(cars)
+
+def myFunc(e):
+    return len(e)
+cars = ['Ford', 'BMW', 'Volvo', 'Benz','VW']
+cars.sort(key=myFunc) # Key를 사용하여 정렬하게 하는법 따로 함수를 정의하여서 사용하였다.
+print(cars)
+
+def myYear(e):
+    return e['year']
+
+cars = [
+  {'car': 'Ford', 'year': 2005},
+  {'car': 'Mitsubishi', 'year': 2000},
+  {'car': 'BMW', 'year': 2019},
+  {'car': 'VW', 'year': 2011}
+]
+cars.sort(key=myYear) # 키를 사용해서 다양하게 정렬을 할 수 있겠다.
+print(cars)
+
+def myfunc(e):
+    return len(e)
+
+cars = ['Ford', 'Mitsubishi', 'BMW', 'VW']
+cars.sort(reverse=True, key=myfunc) # 두가지를 모두 사용하여서 정렬도 가능하다.
+print(cars)
+
+
+
+
 
 
 
