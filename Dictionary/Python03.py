@@ -134,3 +134,46 @@ x = car.popitem() # popitem() 역시 변수에 담아서 그 변수를 프린트
 print(x)
 
 
+# setdefault()의 사용법
+
+car = {
+  'brand':'Benz',
+  'model':'AMG G-Class',
+  'year': 2021
+}
+
+x = car.setdefault('year', 'blanco') # setdefault는 먼저 나온 키의 값이 딕셔너리 안에 있을 경우 그 키값을 불러오는 함수 이다.
+# 두번째는 value 인데 이 밸류의 경우는 키값이 존재하지 않았을 경우 밸류가 키 값을 대신하게 된다.
+print(x)
+
+
+# update() 의 사용법
+car = {
+  'brand':'Benz',
+  'model':'AMG G-Class',
+  'year': 2021
+}
+car.update({'color':'white'})
+print(car)
+
+
+# values()의 사용법
+
+car = {
+  'brand':'Benz',
+  'model':'AMG G-Class',
+  'year': 2021
+}
+x = car.values() # values는 values의 값을 리턴하는 함수이다.
+print(x)
+
+car = {
+  'brand':'Benz',
+  'model':'AMG G-Class',
+  'year': 2021
+}
+
+x = car.values()
+car['year'] = 2018
+# 항상 최신의 상태를 업데이트해서 반영해준다.
+print(x)
