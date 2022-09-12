@@ -28,6 +28,25 @@ y = {'apple', 'microsoft', 'google'}
 z = x.difference(y) # difference()의 경우 다른 점을 리턴해준다. 즉 x안에 있는 요소 중 y에 있다면 그 요소를 제외하고 보여준다.
 print(z)
 
+w = y.difference(x)
+print(w)
+
+# difference_update() 의 사용법
+x = {'apple', 'banana','cherry'}
+y = {'apple', 'microsoft', 'google'}
+
+z = x.difference_update(y) # difference_update의 경우 다른점을 원본에서 삭제해버린다.
+print(x)
+
+# discard() 의 사용법
+
+fruits = {"apple", "banana", "cherry"}
+fruits.discard('apple')
+
+print(fruits) # 특정한 요소를 삭제하여 준다. remove의 경우 요소가 없을때 에러를 발생시키는 경우를 올려 discard를 사용한다.
+
+
+
 
 
 
