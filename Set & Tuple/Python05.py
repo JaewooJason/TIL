@@ -43,7 +43,49 @@ print(x)
 fruits = {"apple", "banana", "cherry"}
 fruits.discard('apple')
 
-print(fruits) # 특정한 요소를 삭제하여 준다. remove의 경우 요소가 없을때 에러를 발생시키는 경우를 올려 discard를 사용한다.
+print(fruits) # 특정한 요소를 삭제하여 준다. remove의 경우 요소가 없을때 에러를 발생시키는 경우를 높혀 discard를 사용한다.
+
+# intertsection()의 사용법
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+z = x.intersection(y) # difference()의 반대이다. 두개이상의 셋에서 같은것이 있으면 리턴시켜준다.
+print(z)
+
+x = {"a", "b", "c"}
+y = {"c", "d", "e"}
+z = {"f", "g", "c"}
+w = x.intersection(y,z) # 이러한 경우 3개를 모두 비교하여 같은 요소를 리턴해준다.
+print(w)
+
+# intersection_update()의 사용법
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+x.intersection_update(y) # intersection_update()의 경우 두개의 셋에 모두 포함되어 있는
+# 요소만 남기고 삭제 시켜준다.
+print(x)
+
+x = {"a", "b", "c"}
+y = {"c", "d", "e"}
+z = {"f", "g", "c"}
+x.intersection_update(y,z)# 3개 이상의 셋일때도 똑같다.
+print(x)
+
+# isdisjoint()의 사용법
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "facebook"}
+
+z= x.isdisjoint(y) # x 셋 안에 y 셋의 요소가 없을 경우 True로 리턴한다.
+
+print(z)
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+w = x.isdisjoint(y)
+print(w)
 
 
 
