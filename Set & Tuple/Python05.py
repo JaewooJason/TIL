@@ -87,6 +87,48 @@ y = {"google", "microsoft", "apple"}
 w = x.isdisjoint(y)
 print(w)
 
+# issubset()의 사용법
+x = {"a", "b", "c"}
+y = {"f", "e", "d", "c", "b", "a"}
+z = x.issubset(y) # 만약 x의 요소가 모두 y에 있다면 True를 리턴해주는 메서드이다.
+print(z)
+
+x = {"a", "b", "c"}
+y = {"f", "e", "d", "b", "a"}
+w = x.issubset(y)
+# 만약 포함되어 있지 않는 것이 있을때에는 False를 리턴해준다.
+print(w)
+
+# issuperset()의 사용법
+x = {"f", "e", "d", "c", "b", "a"}
+y = {"a",'b','c'}
+z = x.issuperset(y)
+# issuperset의 경우 issubset이랑 개념이 반대라고 생각하면 된다. y에 있는 요소들이 x에 있을경우 True로 리턴하는 메서드이다.
+print(z)
+
+x = {"f", "e", "d", "c", "a"}
+y = {"a",'b','c'}
+w = x.issuperset(y)
+# 만약에 하나라도 빠진다면 False를 리턴한다.
+print(w)
+
+# pop()의 사용법
+fruits = {"apple", "banana", "cherry"}
+fruits.pop()
+# 셋안에 랜덤의 요소를 삭제해주는 메서드이다.
+print(fruits)
+
+fruits = {"apple", "banana", "cherry"}
+x = fruits.pop()
+# 변수에 담게 되면 사라진 요소를 보여준다.
+print(fruits)
+print(x)
+
+# remove()의 사용법
+fruits = {"apple", "banana", "cherry"}
+fruits.remove('apple')
+print(fruits)
+# 특정한 요소를 지정해서 삭제 시켜주는 메서드이다. 대신 요소가 완전히 삭제됨으로 discard 에러발생할 확률이 높다.
 
 
 
