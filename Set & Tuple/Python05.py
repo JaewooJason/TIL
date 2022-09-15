@@ -130,6 +130,44 @@ fruits.remove('apple')
 print(fruits)
 # 특정한 요소를 지정해서 삭제 시켜주는 메서드이다. 대신 요소가 완전히 삭제됨으로 discard 에러발생할 확률이 높다.
 
+# symmetric_difference()의 사용법
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+z = x.symmetric_difference(y)
+# 이 메서드의 경우 두개의 셋을 비교하고 같은걸은 비교하고 두개의 셋에 포함되어 있는 요소만 제거하고 나머지요소를 합친다.
+print(z)
+
+# symmetric_difference_update()의 사용법
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+x.symmetric_difference_update(y)
+# 이 메서드의 경우 위에서 본 것과 달리 원본에 영향을 준다고 생각하면 된다. 그러므로 사용할때 주의해야함
+# 이메서드는 셋들을 비교하고 다른 부분을 찾을때 사용하면 된다.
+print(x)
+
+
+# union()의 사용법
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+z = x.union(y)
+# 공통으로 들어가 있는 부분은 셋의 특성상 하나만 들어가기 때문에 하나로 줄이고 나머지는 한곳에 전부 모인다.
+print(z)
+
+x = {"a", "b", "c"}
+y = {"f", "d", "a"}
+z = {"c", "d", "e"}
+w = x.union(y,z)
+# 유니크한 값을 찾을때 사용하면 된다.
+print(w)
+
+# update()의 사용법
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+x.update(y) # 중복된 값을 제외하고 나머지를 전부 한곳에 담아준다.
+print(x)
+
 
 
 
