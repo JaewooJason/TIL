@@ -34,6 +34,18 @@ print(f.read(33))
 f.open('demofile.txt','r')
 print(f.readable()) # file을 읽을 수 있는지 없는지 True or False로 나타내준다.
 
+# readline()의 사용법
+f.open('demofile.txt','r')
+print(f.readline()) # 파일에서 한줄씩 읽어오는 메서드이다.
+
+f.open('demofile.txt', 'r')
+print(f.readline())
+print(f.readline()) # 이렇게 하면 첫 번째 줄이 들어오고 다음으로 두 번째 줄이 들어온다.
+
+f.open('demofile.txt', 'r')
+print(f.readline(5)) # 첫 번째 줄에서 5바이트까지의 데이터를 가져온다.
+
+
 
 
 
