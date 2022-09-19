@@ -45,6 +45,33 @@ print(f.readline()) # 이렇게 하면 첫 번째 줄이 들어오고 다음으�
 f.open('demofile.txt', 'r')
 print(f.readline(5)) # 첫 번째 줄에서 5바이트까지의 데이터를 가져온다.
 
+# readlines()의 사용법
+f.open('demofile.txt','r')
+print(f.readlines())
+
+f.open('demofile.txt','r')
+print(f.readlines(33)) # 33byte 보다 높은 친구를 리턴한다.
+
+# seek()의 사용법
+f.open('demofile.txt', 'r')
+f.seek(4)
+print(f.readline()) # file의 포지션을 바꿔주는 메서드
+
+# seekable()의 사용법
+f = open('demofile.txt','r')
+print(f.seekable()) # seek을 사용 할 수 있는지 없는지를 True or False로 알려줌
+
+# tell()의 사용법
+f = open('demofile.txt','r')
+print(f.tell()) # 현재의 위치를 알려준다
+
+f = open('demofile.txt','r')
+print(f.readline())
+print(f.tell()) # 위에 줄을 읽고 난 뒤에 다음부터 리턴해준다.
+
+
+
+
 
 
 
