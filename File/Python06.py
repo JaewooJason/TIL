@@ -69,6 +69,52 @@ f = open('demofile.txt','r')
 print(f.readline())
 print(f.tell()) # 위에 줄을 읽고 난 뒤에 다음부터 리턴해준다.
 
+# truncate()의 사용법
+
+f = open('demofile.txt', 'a') # 'a'의 의미는 appending
+f.truncate(20) # 여기서 지정한 바이트의 크기만큼만 리턴해준다.
+# 리턴된 결과값: 123456789101234567890
+f.close()
+# 위에서 열고 truncate 쓰고 close 닫은것
+f = open('demofile.txt','r')
+print(f.read())
+
+# writable()의 사용법
+f = open('demofile.txt', ' r')
+print(f.writable()) # 파일에 글을 쓸 수 있는지에 대한 확인 여부를 판단해주는 메서드
+
+# write()의 사용법
+f = open('demofile.txt', 'a')
+f.write('Thank you so much. See you soon')
+f.close()
+#  이런식으로 문자를 파일안에 입력할 수 있다.
+f = open('demofile.txt', 'r')
+print(f.read())
+
+# /n 을 사용 할 수 있다.
+f = open('demofile.txt', 'a')
+f.write('/nSee you soonnnnn')
+f.close()
+
+f = open('demofile.txt','r')
+print(f.read())
+
+# writelines()의 사용법
+f = open('demofile.txt', 'a')
+f.writelines(['See you soon', 'Thank you so muchhhh'])
+f.close()
+# list 형식으로도 파일안에 문자를 넣을 수 있다.
+f = open('demofile','r')
+print(f.read)
+
+# /n is also possible
+
+f = open('demofile.txt','a')
+f.writelines(['/nSeee you soon', '/Thank you so muchhh'])
+f.close()
+
+f = open('demofile.txt','r')
+print(f.read())
 
 
 
