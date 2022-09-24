@@ -47,12 +47,11 @@ p1 = Person()
 print(p1.name)
 
 # contiue 의 사용법
-i = 1
-while i < 9:
+for i in range(9):
     if i == 3:
         continue
-    i =+1
     print(i)
+
 
 # 다르게 사용하는 방법
 i = 0
@@ -70,9 +69,16 @@ def my_function():
 my_function()
 
 # del 의 사용법
+# del을 이용해서 class 삭제
 class Myclass:
     name = "Jason"
+del Myclass
 
+print(Myclass)
+# del을 이용해서 변수 삭제
+x = 'hello'
+del x
+print(x)
 
 
 
