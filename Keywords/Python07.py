@@ -80,6 +80,49 @@ x = 'hello'
 del x
 print(x)
 
+# elif 사용법
+for i in range(-5,5):
+    if i>0 :
+        print("Yes")
+    elif i == 0:
+        print('Whatever')
+    else:
+        print('No')
+# else if 를 합친거라고 생각하면 된다.
+
+# else 사용법
+x = 2
+if x > 3 :
+    print('Yes')
+else:
+    print('No')
+
+# 혹은 try except 문에도 사용 가능하다.
+
+x = 5
+
+try:
+    x > 10
+except:
+    print('Something went wrong')
+else:
+    print('The "try" code was excuted without raising any errors')
+
+# except 사용법
+try:
+    x > 3
+except:
+    print("something went wrong")
+
+
+x = 'hello'
+try :
+    x > 3
+except NameError:
+    print('You have a variable that is not defined.')
+except TypeError:
+    print("You are comparing value of different type")
+
 
 
 
