@@ -74,11 +74,11 @@ class Myclass:
     name = "Jason"
 del Myclass
 
-print(Myclass)
+# print(Myclass)
 # del을 이용해서 변수 삭제
 x = 'hello'
 del x
-print(x)
+# print(x)
 
 # elif 사용법
 for i in range(-5,5):
@@ -123,6 +123,34 @@ except NameError:
 except TypeError:
     print("You are comparing value of different type")
 
+try :
+    x = 1/10
+except NameError:
+    print("You have a variable that is not defined.")
+except TypeError:
+    print("You are comparing values of different type")
+except:
+    print("something else went wrong")
 
+x = 1
+
+try :
+    x >10
+except NameError:
+    print("You have a variable that is not defined.")
+except TypeError:
+    print("You are comparing values of different type")
+else:
+    print("The 'Try' code was excuted without raising any errors")
+
+# Fasle 의 사용법
+print(5 > 6)
+print( 4 in [1,2,3])
+print('hello' is 'goodbye')
+print(5==6)
+print(5==6 or 6==7)
+print(5==6 and 6==7)
+print('Hello' is not 'Hello')
+print(3 not in [1,2,3])
 
 
