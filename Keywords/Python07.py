@@ -153,4 +153,35 @@ print(5==6 and 6==7)
 print('Hello' is not 'Hello')
 print(3 not in [1,2,3])
 
+# finally 의 사용법
+
+try:
+    x > 3
+except:
+    print('Something went wrong!')
+else:
+    print('Nothing went wrong')
+finally:
+    print('The try..... except block is finished')
+# finally is useful to close the object and clean up resources
+
+# for 의 사용법
+
+for i in range(1,9):
+    print(i)
+
+for i in ['apple','banana','cherry']:
+    print(i)
+# or
+
+fruits = ['apple','banana','cherry']
+for i in fruits:
+    print(i)
+
+from datetime import time
+x = time(hour=15)
+print(x)
+
+
+
 
