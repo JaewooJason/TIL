@@ -182,6 +182,45 @@ from datetime import time
 x = time(hour=15)
 print(x)
 
+# global 의 사용법
+def myFunction():
+    global x
+    x = 'hello'
+myFunction()
+# global은 함수안에 있는 지역변수 함수밖에서도 사용하게 하는 키워드이다.
+# global을 사용하게 되면 디버깅에도 편리하며 함수밖에서 써도 되지만 함수 안에서 사용함으로써 좀 더 쉽게 정의 할 수 있다.
+print(x)
+
+# if 의 사용법
+
+x = 5
+if x > 3:
+    print('Yes')
+# else를 같이 사용하는 경우
+
+x = 5
+if x > 3:
+    print('Yes')
+else:
+    print('No')
+
+# import 의 사용법
+import datetime
+
+x = datetime.datetime.now()
+print(x)
+
+
+# in 키워드 사용법
+
+fruits = ["apple",'banana','cherry']
+if 'banana' in fruits:
+    print('Yes')
+# 위에 경우 처럼 if 문에 사용하는 방법도 존재하고
+for i in fruits:
+    print(i)
+# 위에 방법 처럼 for으로 사용하는 방법도 있습니다.
+
 
 
 
