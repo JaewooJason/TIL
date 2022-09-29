@@ -221,6 +221,21 @@ for i in fruits:
     print(i)
 # 위에 방법 처럼 for으로 사용하는 방법도 있습니다.
 
+# is 의 사용법
+x = ['apple', 'banana','cherry']
+y = x
+print(x is y)
 
+x = ['apple', 'banana','cherry']
+y = ['apple', 'banana','cherry']
+
+print(x is y)
+
+# lambda 의 사용
+x = lambda x : x + 10
+print(x(5))
+
+x = lambda a,b,c : a + b + c
+print(x(4,5,6))
 
 
