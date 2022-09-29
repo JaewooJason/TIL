@@ -238,4 +238,35 @@ print(x(5))
 x = lambda a,b,c : a + b + c
 print(x(4,5,6))
 
+# None 의 사용법
+
+x = None
+
+print(x)
+
+if x :
+    print('Do you think None is True?')
+elif x is False:
+    print('Do you think None is False?')
+else:
+    print('None is not True and False. None is just None')
+
+# nonlocal 의 사용법
+
+def myFunc1():
+    x = 'Jason'
+    def myFunc2():
+        nonlocal x # nonlocal을 사용하면 내부변수가 아닌 광역 변수로 바뀌게 되는것이다.
+        x = 'Hello'
+    myFunc2()
+    return x
+print(myFunc1())
+# 아래와 비교하면 좀 더 쉽게 이해가 가능하다.
+def myFunc3():
+    x = 'Jason'
+    def myFunc4():
+        x = 'Hello'
+    myFunc4()
+    return x
+print(myFunc3())
 
