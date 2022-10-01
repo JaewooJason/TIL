@@ -270,3 +270,17 @@ def myFunc3():
     return x
 print(myFunc3())
 
+# not 의 사용법
+
+x = False
+print(not x)
+
+# or 의 사용법
+x = (7>5 or 6>5)
+print(x)
+
+# if문 안에서도 많이 사용된다.
+if 7 >5 or 6>5:
+    print('At least one of the statements are True')
+else:
+    print('None of the statement are True')
