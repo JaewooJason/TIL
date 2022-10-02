@@ -284,3 +284,30 @@ if 7 >5 or 6>5:
     print('At least one of the statements are True')
 else:
     print('None of the statement are True')
+
+# pass 의 사용법
+# 보통 pass 는 함수를 설정하거나 클라스를 설정하기전에 정확하지 않은 상황에서 열려있는 함수나 클라스를 넘길 때 사용
+
+def myFunc():
+    pass
+
+class myClass():
+    pass
+
+a = 22
+b = 400
+if a < b:
+    pass
+# raise 사용법
+# 상황에 따라 에러를 발생시키는 용도
+
+x =-1
+
+if 0 >x:
+    raise Exception('Sorry, there is no number below Zero')
+
+x= 'hello'
+
+if not type(x) is int:
+    raise TypeError('Only integers are allowed')
+
