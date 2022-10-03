@@ -325,3 +325,32 @@ def myFunc2():
     print('Hello, World')
 print(myFunc2())
 
+# True 의 사용법
+# True는 불리언으로 비교하여서 결과를 True or False 로 나타낸다.
+print(7>6)
+print(5==5)
+print(3<7)
+print('hello' is not 'goodbye')
+
+# try 의 사용법
+# try and except 는 세트라고 생각하면 된다. 예외처리의 세트
+
+try:
+    x >3
+except:
+    print('Something went wrong')
+# or below
+
+try:
+    x > 5
+except:
+    Exception('Something went wrong')
+
+# while 의 사용법
+# while 또한 loop 를 만들어 주는 함수이다.
+
+x = 0
+while x < 9:
+    print(x)
+    x = x +1
+# while 구문을 쓸때 continue and break를 많이 사용한다.
