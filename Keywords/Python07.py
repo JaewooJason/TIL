@@ -311,3 +311,17 @@ x= 'hello'
 if not type(x) is int:
     raise TypeError('Only integers are allowed')
 
+# how to use returen keyword
+
+# The return keyword is that exit a function and return the sum
+
+def myFunc1():
+    return 3+3
+
+print(myFunc1())
+
+def myFunc2():
+    return 6+2
+    print('Hello, World')
+print(myFunc2())
+
