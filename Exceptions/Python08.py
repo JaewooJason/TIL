@@ -15,4 +15,7 @@ Total 33 Exceptions'''
 # KeyError = Raise when Key does not exist in dictionary
 # KeyboardInterruption = Raise when user presses Ctrl + c, Ctrl+z or delete
 # LockupError = Raise when errors raised cant be found
-
+# MemoryError = Raise when a program runs out of memory
+# NameError = Raise when a variable(name) does not exist
+# NotImplementedError = Raise when an abstract method requires an inherited class to override the method
+# OSError = Raise when a system related operation causes an error
