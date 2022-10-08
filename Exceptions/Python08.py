@@ -19,3 +19,6 @@ Total 33 Exceptions'''
 # NameError = Raise when a variable(name) does not exist
 # NotImplementedError = Raise when an abstract method requires an inherited class to override the method
 # OSError = Raise when a system related operation causes an error
+# OverflowError = Raise when the result of a numberic calculation are too large
+# ReferenceError = Raise when a weak reference object does not exist
+# RuntimeError = Raise when an error occurs that do not belong to any specific expections
