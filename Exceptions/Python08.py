@@ -1,24 +1,28 @@
 ''' Python Exceptions 의 종류
 Total 33 Exceptions'''
 
-# ArithmeticError = Raise when an error occur in numberic calculations
-# AssertaionError = Raise when an assert statement fails -
+# ArithmeticError = Raised when an error occur in numberic calculations
+# AssertaionError = Raised when an assert statement fails -
 ''' assert 는 True 인지 False 인지를 따지고 만약 False 이면 False 만들어낸 오류를 죽여버린다.'''
 # AttributeError = Raise when attribute reference and assignment fails
 # Exception = base class for all Exceptions
-# EOFError = Raise with input() method hits an "end of file" condition(EOF)
-# FloatingPointError = Raise when floating point calculation fails
-# GeneratorExit = Raise when generator is closed (with the close() method)
-# Importerror = Raise when an import module does not exist
-# IndentationError = Raise when indentation is not correct
-# IndexError = Raise when index of a sequence does not exist
-# KeyError = Raise when Key does not exist in dictionary
-# KeyboardInterruption = Raise when user presses Ctrl + c, Ctrl+z or delete
-# LockupError = Raise when errors raised cant be found
-# MemoryError = Raise when a program runs out of memory
-# NameError = Raise when a variable(name) does not exist
-# NotImplementedError = Raise when an abstract method requires an inherited class to override the method
-# OSError = Raise when a system related operation causes an error
-# OverflowError = Raise when the result of a numberic calculation are too large
-# ReferenceError = Raise when a weak reference object does not exist
-# RuntimeError = Raise when an error occurs that do not belong to any specific expections
+# EOFError = Raised with input() method hits an "end of file" condition(EOF)
+# FloatingPointError = Raised when floating point calculation fails
+# GeneratorExit = Raised when generator is closed (with the close() method)
+# Importerror = Raised when an import module does not exist
+# IndentationError = Raised when indentation is not correct
+# IndexError = Raised when index of a sequence does not exist
+# KeyError = Raised when Key does not exist in dictionary
+# KeyboardInterruption = Raised when user presses Ctrl + c, Ctrl+z or delete
+# LockupError = Raised when errors raised cant be found
+# MemoryError = Raised when a program runs out of memory
+# NameError = Raised when a variable(name) does not exist
+# NotImplementedError = Raised when an abstract method requires an inherited class to override the method
+# OSError = Raised when a system related operation causes an error
+# OverflowError = Raised when the result of a numberic calculation are too large
+# ReferenceError = Raised when a weak reference object does not exist
+# RuntimeError = Raised when an error occurs that do not belong to any specific expections
+# StopIteration = Raised when the next() method of an iterator has no further value
+# SyntaxError = Raised when a syntax error occurs
+# tabError = Raised indentation consist of tabs or spaces
+# SystemError = Raised when a system error occurs
