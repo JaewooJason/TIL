@@ -26,3 +26,10 @@ Total 33 Exceptions'''
 # SyntaxError = Raised when a syntax error occurs
 # tabError = Raised indentation consist of tabs or spaces
 # SystemError = Raised when a system error occurs
+# SystemExit = Raised when a sys.exit() function is called
+# TypeError = Raised when two different types are combined 예를 들어 문자와 숫자 이런식
+# UnboundLocalError = Raised when local variable is reference before assignment
+# UnicodeError = Raised when a unicode problem occurs
+# UnicodeEncodeError = Raised when a unicode encoding problem occurs
+# UnicodeDecodeError = Raised when a unicdoe decoding problem occurs
+
