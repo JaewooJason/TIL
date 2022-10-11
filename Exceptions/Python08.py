@@ -31,5 +31,7 @@ Total 33 Exceptions'''
 # UnboundLocalError = Raised when local variable is reference before assignment
 # UnicodeError = Raised when a unicode problem occurs
 # UnicodeEncodeError = Raised when a unicode encoding problem occurs
-# UnicodeDecodeError = Raised when a unicdoe decoding problem occurs
-
+# UnicodeDecodeError = Raised when a unicdde decoding problem occurs
+# UnicodeTranlateError = Raised when a unicode translation problems occurs
+# ValueError = Raised when there is a wrong value in a specified data type
+# ZeroDivionError = Raised when the second operator in division is zero
