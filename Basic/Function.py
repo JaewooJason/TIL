@@ -33,6 +33,34 @@ def myFunc(**kid):
 myFunc(fname = 'Tobias', lname='Refsnes')
 # 위의 방식은 키워드가 몇개가 들어갈지 모를때 사용하면 된다.
 
+def my_function(country = 'Norway'): # 이 방식은 디폴트 되어 있는 파라메타를 사용하는 방법이다.
+    print('I am from ' + country)
+my_function("Sweden") # 이런식으로 나라를 바꿔서 할 수도 있고 기본으로 만약 적지 않으면 기본값으로 리턴한다.
+my_function('Korea')
+my_function()
+my_function('Brazil')
+
+# 다음은 리스트를 파싱하는 방법이다.
+def list_function(food):
+    for x in food:
+        print(x)
+fruits = ['apple', 'banana','kiwi','Melon']
+list_function(fruits)
+
+# 다음은 리턴을 사용하는 방법이다.
+
+def myFunc(x):
+    return 5 * x
+
+print(myFunc(3))
+print(myFunc(5))
+print(myFunc(4))
+
+# 만약에 아직 컨텐츠가 정해지지 않았으면 아래와 같이 하면 된다.
+
+def my_function(x):
+    pass
+
 
 
 
