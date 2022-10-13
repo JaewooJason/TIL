@@ -31,7 +31,6 @@ myFunc(child1= 'Emil', child2='Tobias', child3='Linus') # 이런식으로 키 �
 def myFunc(**kid):
     print('His last name is ' + kid['lname'])
 myFunc(fname = 'Tobias', lname='Refsnes')
-
 # 위의 방식은 키워드가 몇개가 들어갈지 모를때 사용하면 된다.
 
 
