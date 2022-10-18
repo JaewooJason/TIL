@@ -19,3 +19,30 @@ p1 = person(36,"John")
 print(p1.name)
 print(p1.age)
 print(p1)
+
+class person:
+    def __init__(self,age, name):
+        self.name = name
+        self.age = age
+
+    def myFunc(self):
+        print("Hello my name is " + self.name)
+
+p1= person(25,'Jason')
+p1.myFunc()
+
+
+class person1:
+    def __init__(mysillyobject,age,name):
+        mysillyobject.age = age
+        mysillyobject.name = name
+    def myName(abc):
+        print('Hello my name is '+ abc.name)
+p2 = person1(25,"Jason")
+p2.myName()
+
+p1.age = 40
+
+del p1.age
+
+del p1
