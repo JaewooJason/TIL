@@ -24,3 +24,19 @@ def glo_func():
     print(x)
 glo_func()
 print(x)
+
+def glob():
+    global x
+    x=300
+glob()
+print(x)
+
+x = 300
+def myfunc():
+  global x
+  x = 200
+
+myfunc()
+
+print(x)
+
