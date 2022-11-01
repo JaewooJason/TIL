@@ -5,8 +5,13 @@ question = ['Q2', 'Q3', 'Q4', 'Q5', 'Q6_1', 'Q6_2', 'Q6_3', 'Q6_4', 'Q6_5', 'Q6_
 questions = []
 
 for i in question:
-    if len(i) ==2:
+    if len(i) == 2:
            questions.append(i)
 print(questions)
+
+quetion1 = [i for i in question if '_' not in i]
+print(quetion1)
+
+# 리스트 컴프레션을 잘 사용하는 법 공부하기
 
 
